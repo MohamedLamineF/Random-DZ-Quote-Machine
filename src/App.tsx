@@ -1,32 +1,42 @@
 import { useState } from "react";
 import "./App.css";
+import QuoteContainer from "./components/QuoteContainer";
 
 const COLORS = [
-  "bg-indigo-600",
-  "bg-purple-600",
-  "bg-pink-600",
-  "bg-rose-600",
-  "bg-orange-600",
-  "bg-amber-600",
-  "bg-lime-600",
-  "bg-emerald-600",
-  "bg-teal-600",
-  "bg-cyan-600",
+  "bg-gradient-to-r from-green-200 via-teal-400 to-cyan-600",
+  "bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500",
+  "bg-gradient-to-r from-cyan-700 via-blue-500 to-indigo-600",
+  "bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500",
+  "bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400",
+  "bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500",
+  "bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-500",
+  "bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500",
+  "bg-gradient-to-r from-indigo-500 via-blue-500 to-cyan-500",
+  "bg-gradient-to-r from-gray-500 via-green-500 to-emerald-400",
+  "bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500",
+  "bg-gradient-to-r from-gray-300 via-yellow-500 to-amber-400",
+  "bg-gradient-to-r from-yellow-500 via-lime-500 to-green-500",
+  "bg-gradient-to-r from-gray-800 via-blue-700 to-gray-900",
+  "bg-gradient-to-r from-pink-200 via-purple-400 to-indigo-600",
+  "bg-gradient-to-r from-yellow-200 via-lime-400 to-green-600",
 ] as const;
 
 function App() {
   const [bgColor, setBgColor] = useState<string>(COLORS[0]);
 
+  const handleNewQuote = () => {
+    setBgColor(COLORS[Math.floor(Math.random() * COLORS.length)]);
+  };
+
   return (
     <div
       className={`min-h-screen ${bgColor} transition-colors duration-500 flex items-center justify-center p-4`}
     >
-      <div id="quote-box">
-        <div id="text">Text</div>
-        <div id="author">Quote Author</div>
-        <button id="new-quote">New Quote</button>
-        <a id="tweet-quote">Tweet</a>
-      </div>
+      <QuoteContainer
+        textQuote="It would take too long to rewrite the code from scratch."
+        authorQuote="mohamed lamine"
+        onNewQuote={() => handleNewQuote()}
+      />
     </div>
   );
 }
