@@ -13,8 +13,10 @@ const COLORS = [
   "bg-teal-600",
   "bg-cyan-600",
 ] as const;
+
 function App() {
   const [bgColor, setBgColor] = useState<string>(COLORS[0]);
+
   return (
     <div
       className={`min-h-screen ${bgColor} transition-colors duration-500 flex items-center justify-center p-4`}
