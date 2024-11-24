@@ -42,6 +42,7 @@ const QuoteContainer: React.FC<QuoteContainerProps> = ({
         <div className="flex items-center gap-2">
           <a
             id="tweet-quote"
+            role="button"
             className="flex items-center gap-2 px-4 py-2 border-2 border-[#3187ff] text-[#3187ff] rounded-lg hover:bg-blue-50"
             aria-label="Tweet this quote"
           >
@@ -58,9 +59,15 @@ const QuoteContainer: React.FC<QuoteContainerProps> = ({
             <span>Skeet</span>
           </a>
         </div>
-        <button id="new-quote" onClick={() => onNewQuote()}>
+        <a
+          id="new-quote"
+          role="button"
+          className="flex items-center gap-2 px-4 py-2 border-2 border-[#3187ff] text-[#3187ff] rounded-lg hover:bg-blue-50"
+          aria-label="new Quote"
+          onClick={() => onNewQuote()}
+        >
           New Quote
-        </button>
+        </a>
       </div>
     </div>
   );
