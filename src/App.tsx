@@ -25,7 +25,7 @@ const COLORS = [
   "bg-gradient-to-r from-yellow-200 via-lime-400 to-green-600",
 ];
 
-const quotes: QuoteData[] = [
+const QUOTES: QuoteData[] = [
   {
     content:
       "You will face many defeats in life, but never let yourself be defeated.",
@@ -602,9 +602,9 @@ const quotes: QuoteData[] = [
 ];
 function App() {
   const [bgColor, setBgColor] = useState<string>(COLORS[0]);
-  const [quote, setQuote] = useState<QuoteData>(quotes[0]);
+  const [quote, setQuote] = useState<QuoteData>(QUOTES[0]);
   const handleNewQuote = () => {
-    setQuote(quotes[Math.floor(Math.random() * quotes.length)]);
+    setQuote(QUOTES[Math.floor(Math.random() * QUOTES.length)]);
     setBgColor(COLORS[Math.floor(Math.random() * COLORS.length)]);
   };
 
