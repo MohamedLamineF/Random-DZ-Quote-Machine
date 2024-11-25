@@ -6,6 +6,7 @@ interface QuoteData {
   content: string;
   author: string;
 }
+
 const COLORS = [
   "bg-gradient-to-r from-green-200 via-teal-400 to-cyan-600",
   "bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500",
@@ -600,6 +601,7 @@ const QUOTES: QuoteData[] = [
     author: "Theodore Roethke",
   },
 ];
+
 function App() {
   const [bgColor, setBgColor] = useState<string>(COLORS[0]);
   const [quote, setQuote] = useState<QuoteData>(QUOTES[0]);
