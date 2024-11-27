@@ -1,0 +1,16 @@
+.circle-reveal {
+  position: absolute;
+  inset: 0;
+  clip-path: circle(0% at 50% 50%);
+  animation: circleExpand 1.5s ease-in-out forwards; /* Increased duration to 1.5s */
+  z-index: 0; /* Lower than the quote box */
+}
+
+@keyframes circleExpand {
+  0% {
+    clip-path: circle(0% at 50% 50%);
+  }
+  100% {
+    clip-path: circle(150% at 50% 50%);
+  }
+}

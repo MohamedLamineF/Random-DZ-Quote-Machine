@@ -24,21 +24,43 @@ const COLORS = [
 
 function App() {
   const [bgColor, setBgColor] = useState<string>(COLORS[0]);
+  const [circleColor, setCircleColor] = useState<string>("");
   const [quote, setQuote] = useState<QuoteData>(QUOTES[0]);
+
   const handleNewQuote = () => {
+    const newColor = COLORS[Math.floor(Math.random() * COLORS.length)];
+    setCircleColor(newColor); // Start the circle animation
+    setTimeout(() => {
+      setBgColor(newColor); // Update the full background after the animation
+      setCircleColor(""); // Remove the animation div
+    }, 800); // Match the animation duration
     setQuote(QUOTES[Math.floor(Math.random() * QUOTES.length)]);
-    setBgColor(COLORS[Math.floor(Math.random() * COLORS.length)]);
   };
 
   return (
-    <div
-      className={`min-h-screen ${bgColor} transition-colors duration-500 flex items-center justify-center p-4`}
-    >
-      <QuoteContainer
-        textQuote={quote.content}
-        authorQuote={quote.author}
-        onNewQuote={() => handleNewQuote()}
-      />
+    <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background color */}
+      <div
+        className={`absolute inset-0 ${bgColor}`}
+        style={{ zIndex: 0 }}
+      ></div>
+
+      {/* Circle reveal animation */}
+      {circleColor && (
+        <div
+          className={`circle-reveal ${circleColor}`}
+          style={{ zIndex: 0 }} // Ensures it's under the quote box
+        ></div>
+      )}
+
+      {/* Quote Box */}
+      <div className="relative z-10">
+        <QuoteContainer
+          textQuote={quote.content}
+          authorQuote={quote.author}
+          onNewQuote={handleNewQuote}
+        />
+      </div>
     </div>
   );
 }
