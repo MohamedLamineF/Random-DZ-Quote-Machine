@@ -2,7 +2,7 @@
   position: absolute;
   inset: 0;
   clip-path: circle(0% at 50% 50%);
-  animation: circleExpand 1s ease-in-out forwards; 
+  animation: circleExpand 0.6s ease-in-out forwards; 
   z-index: 0; 
 }
 
