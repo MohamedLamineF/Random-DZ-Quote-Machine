@@ -60,11 +60,7 @@ export const QUOTES: QuoteData[] = [
     content: "You only live once, but if you do it right, once is enough.",
     author: "Mae West",
   },
-  {
-    content:
-      "The whole secret of a successful life is to find out what is one's destiny to do, and then do it.",
-    author: "Henry Ford",
-  },
+
   {
     content: "In order to write about life first you must live it.",
     author: "Ernest Hemingway",
@@ -88,11 +84,6 @@ export const QUOTES: QuoteData[] = [
     author: "Mark Twain",
   },
 
-  {
-    content:
-      "I have very strong feelings about how you lead your life. You always look ahead, you never look back.",
-    author: "Ann Richards",
-  },
   {
     content:
       "Life is like riding a bicycle. To keep your balance, you must keep moving.",
@@ -196,11 +187,7 @@ export const QUOTES: QuoteData[] = [
       "Challenges are what make life interesting and overcoming them is what makes life meaningful.",
     author: "Joshua J. Marine",
   },
-  {
-    content:
-      "Make it a rule of life never to regret and never to look back. Regret is an appalling waste of energy; you can't build on it; it's only good for wallowing in.",
-    author: "Katherine Mansfield",
-  },
+
   {
     content:
       "The most important trip you may take in life is meeting people halfway.",
@@ -216,11 +203,7 @@ export const QUOTES: QuoteData[] = [
       "Fake friends are like shadows: always near you at your brightest moments, but nowhere to be seen at your darkest hour.",
     author: "Khalil Gibran",
   },
-  {
-    content:
-      "False friendship, like ivy, decays and ruins the walls it embraces; but true friendship gives new life and animation to the object it supports.",
-    author: "Richard Burton",
-  },
+
   {
     content:
       "Being betrayed is one of the most valuable lessons life can teach.",
@@ -267,11 +250,7 @@ export const QUOTES: QuoteData[] = [
     content: "Make sure the lions you roll with aren't snakes in disguise.",
     author: "Beenereux Philip",
   },
-  {
-    content:
-      "Lots of people want to ride with you in the limo, but what you want is someone who will take the bus with you when the limo breaks down.",
-    author: "Oprah Winfrey",
-  },
+
   {
     content:
       "In the end, we will remember not the words of our enemies, but the silence of our friends.",
@@ -321,18 +300,8 @@ export const QUOTES: QuoteData[] = [
     author: "German Proverb",
   },
   {
-    content:
-      "The worst pain in the world goes beyond the physical. Even further beyond any other emotional pain one can feel. It is the betrayal of a friend.",
-    author: "Heather Brewer",
-  },
-  {
     content: "What greater wound is there than a false friend?",
     author: "Sophocles",
-  },
-  {
-    content:
-      "Some people think that the truth can be hidden away with a little cover-up and decoration. But as time goes by, what is true is revealed, and what is fake fades away.",
-    author: "Ismail Haniyeh",
   },
   {
     content: "Friends ask you questions, enemies question you.",
@@ -463,11 +432,6 @@ export const QUOTES: QuoteData[] = [
     author: "Unknown",
   },
   { content: "I need you like a heart needs a beat.", author: "One Republic" },
-  {
-    content:
-      "There is never a time or place for true love. It happens accidentally, in a heartbeat, in a single flashing, throbbing moment.",
-    author: "Sarah Dessen",
-  },
   {
     content:
       "Love is that condition in which the happiness of another person is essential to your own.",
