@@ -19,7 +19,7 @@ function App() {
   };
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <div className="relative min-h-screen flex items-center justify-center overflow-hidden ">
       <div
         className={`absolute inset-0 ${bgColor}`}
         style={{ zIndex: 0 }}
@@ -32,7 +32,7 @@ function App() {
         ></div>
       )}
 
-      <div className="relative z-10">
+      <div className="relative z-10  mix-blend-lighten font-bold">
         <QuoteContainer
           textQuote={quote.content}
           authorQuote={quote.author}
