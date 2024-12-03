@@ -36,7 +36,7 @@ const QuoteContainer: React.FC<QuoteContainerProps> = ({
           isLoading ? "opacity-50" : "opacity-100"
         }`}
       >
-        ~{authorQuote || "unknown"}
+        ~{authorQuote || ""}
       </div>
       <div className="flex justify-between items-center mt-8">
         <div className="flex items-center gap-2">
