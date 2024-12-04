@@ -27,7 +27,7 @@ const QuoteContainer: React.FC<QuoteContainerProps> = ({
         }`}
       >
         <span className="text-4xl">"</span>
-        {textQuote || "loading..."}
+        {textQuote || "loading ..."}
       </div>
 
       <div
