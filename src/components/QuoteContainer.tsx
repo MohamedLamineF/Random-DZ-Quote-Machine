@@ -1,6 +1,6 @@
 import React from "react";
-import butterfly from "/butterfly.png";
 import x from "/x.png";
+import butterfly from "/butterfly.png";
 
 interface QuoteContainerProps {
   textQuote: string;
