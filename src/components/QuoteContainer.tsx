@@ -11,7 +11,7 @@ interface QuoteContainerProps {
 
 const QuoteContainer: React.FC<QuoteContainerProps> = ({
   textQuote = "loading...",
-  authorQuote = "unknown",
+  authorQuote = "someone",
   isLoading = false,
   onNewQuote = () => {},
 }) => {
