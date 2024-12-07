@@ -22,5 +22,5 @@ export const useQuotes = () => {
     }, 300);
   }, [quote]);
 
-  return { quote, isLoading, error: null, fetchNewQuote };
+  return { quote, isLoading, fetchNewQuote };
 };
