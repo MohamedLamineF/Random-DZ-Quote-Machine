@@ -4,498 +4,459 @@ export interface QuoteData {
 }
 
 export const GRADIENT_COLORS: string[] = [
-  "bg-gradient-to-b from-green-200 via-teal-400 to-cyan-600",
-  "bg-gradient-to-b from-red-500 via-orange-500 to-yellow-500",
-  "bg-gradient-to-b from-cyan-700 via-blue-500 to-indigo-600",
-  "bg-gradient-to-b from-indigo-500 via-purple-500 to-pink-500",
-  "bg-gradient-to-b from-cyan-400 via-blue-400 to-indigo-400",
-  "bg-gradient-to-b from-yellow-500 via-orange-500 to-red-500",
-  "bg-gradient-to-b from-blue-500 via-cyan-500 to-teal-500",
-  "bg-gradient-to-b from-purple-500 via-indigo-500 to-blue-500",
-  "bg-gradient-to-b from-indigo-500 via-blue-500 to-cyan-500",
-  "bg-gradient-to-b from-gray-500 via-green-500 to-emerald-400",
-  "bg-gradient-to-b from-emerald-500 via-teal-500 to-cyan-500",
-  "bg-gradient-to-b from-gray-300 via-yellow-500 to-amber-400",
-  "bg-gradient-to-b from-yellow-500 via-lime-500 to-green-500",
-  "bg-gradient-to-b from-gray-800 via-blue-700 to-gray-900",
-  "bg-gradient-to-b from-pink-200 via-purple-400 to-indigo-600",
-  "bg-gradient-to-b from-yellow-200 via-lime-400 to-green-600",
-  "bg-gradient-to-b from-pink-500 via-red-500 to-yellow-500",
-  "bg-gradient-to-b from-green-300 via-yellow-300 to-pink-300",
-  "bg-gradient-to-b from-purple-300 via-pink-300 to-red-300",
-  "bg-gradient-to-b from-yellow-200 via-pink-200 to-pink-400",
-  "bg-gradient-to-b from-yellow-800 via-red-600 to-purple-600",
-  "bg-gradient-to-b from-green-200 to-blue-200",
-  "bg-gradient-to-b from-red-200 to-red-500",
-  "bg-gradient-to-b from-purple-200 via-purple-400 to-purple-800",
-  "bg-gradient-to-b from-pink-500 to-purple-500",
-  "bg-gradient-to-b from-indigo-200 via-red-200 to-yellow-100",
+  "bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600",
+  "bg-gradient-to-r from-rose-600 via-orange-600 to-amber-600",
+  "bg-gradient-to-r from-amber-600 via-yellow-600 to-lime-600",
+  "bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600",
+  "bg-gradient-to-r from-cyan-600 via-blue-600 to-indigo-600",
+  "bg-gradient-to-r from-green-200 via-teal-400 to-cyan-600",
+  "bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500",
+  "bg-gradient-to-r from-cyan-700 via-blue-500 to-indigo-600",
+  "bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500",
+  "bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400",
+  "bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500",
+  "bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-500",
+  "bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500",
+  "bg-gradient-to-r from-indigo-500 via-blue-500 to-cyan-500",
+  "bg-gradient-to-r from-gray-500 via-green-500 to-emerald-400",
+  "bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500",
+  "bg-gradient-to-r from-gray-300 via-yellow-500 to-amber-400",
+  "bg-gradient-to-r from-yellow-500 via-lime-500 to-green-500",
+  "bg-gradient-to-r from-gray-800 via-blue-700 to-gray-900",
+  "bg-gradient-to-r from-pink-200 via-purple-400 to-indigo-600",
+  "bg-gradient-to-r from-yellow-200 via-lime-400 to-green-600",
+  "bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500",
+  "bg-gradient-to-r from-green-300 via-yellow-300 to-pink-300",
+  "bg-gradient-to-r from-purple-300 via-pink-300 to-red-300",
+  "bg-gradient-to-r from-yellow-200 via-pink-200 to-pink-400",
+  "bg-gradient-to-r from-yellow-800 via-red-600 to-purple-600",
+  "bg-gradient-to-r from-purple-200 via-purple-400 to-purple-800",
 ];
 
-export const QUOTES: QuoteData[] = [
+export const ENQUOTES: QuoteData[] = [
   {
     content:
-      "You will face many defeats in life, but never let yourself be defeated.",
-    author: "Maya Angelou",
-  },
-  {
-    content:
-      "In three words I can sum up everything I've learned about life: It goes on.",
-    author: "Robert Frost",
-  },
-  {
-    content: "Life is a long lesson in humility.",
-    author: "J.M. Barrie, 'The Little Minister'",
-  },
-  {
-    content:
-      "To live is the rarest thing in the world. Most people exist, that is all.",
-    author: "Oscar Wilde",
-  },
-  {
-    content:
-      "The most important thing is to enjoy your life–to be happy–it's all that matters.",
-    author: "Audrey Hepburn",
-  },
-  {
-    content:
-      "To succeed in life, you need three things: a wishbone, a backbone and a funnybone.",
-    author: "Reba McEntire",
-  },
-  {
-    content:
-      "We must be willing to let go of the life we planned so as to have the life that is waiting for us.",
-    author: "Joseph Campbell",
-  },
-  {
-    content:
-      "Life is a succession of lessons which must be lived to be understood.",
-    author: "Ralph Waldo Emerson",
-  },
-  {
-    content: "Love the life you live. Live the life you love.",
-    author: "Bob Marley",
-  },
-  {
-    content:
-      "I was taught that the way of progress was neither swift nor easy.",
-    author: "Marie Curie",
-  },
-  {
-    content: "He who has a why to live for can bear almost any how.",
-    author: "Friedrich Nietzsche",
-  },
-  {
-    content: "You only live once, but if you do it right, once is enough.",
-    author: "Mae West",
-  },
-
-  {
-    content: "In order to write about life first you must live it.",
-    author: "Ernest Hemingway",
-  },
-  {
-    content: "Life has no limitations, except the ones you make.",
-    author: "Les Brown",
-  },
-  { content: "Live for each second without hesitation.", author: "Elton John" },
-  {
-    content: "The most wasted of all days is one without laughter.",
-    author: "E. E. Cummings",
-  },
-  {
-    content: "Start each day with a positive thought and a grateful heart.",
-    author: "Roy Bennett",
-  },
-  {
-    content:
-      "All you need in this life is ignorance and confidence; then success is sure.",
-    author: "Mark Twain",
+      "Freedom is a sacred thing and it should be protected at any cost.",
+    author: "Ali La Pointe (Algerian Revolutionary Leader)",
   },
 
   {
     content:
-      "Life is like riding a bicycle. To keep your balance, you must keep moving.",
-    author: "Albert Einstein",
-  },
-  {
-    content: "Life shrinks or expands in proportion to one's courage.",
-    author: "Anais Nin",
-  },
-  {
-    content: "You do not find the happy life. You make it.",
-    author: "Camilla Eyring Kimball",
-  },
-  {
-    content:
-      "A life is not important except in the impact it has on other lives.",
-    author: "Jackie Robinson",
+      "We have the right to be free, to build, to dream, and to fight for what is ours.",
+    author: "Frantz Fanon (Psychiatrist, Philosopher, and Revolutionary)",
   },
 
   {
     content:
-      "The biggest adventure you can ever take is to live the life of your dreams.",
-    author: "Oprah Winfrey",
-  },
-  {
-    content: "If you own this story you get to write the ending.",
-    author: "Brené Brown",
-  },
-  {
-    content:
-      "Life is like a coin. You can spend it any way you wish, but you only spend it once.",
-    author: "Lillian Dickinson",
-  },
-  {
-    content: "Life is about making an impact, not making an income.",
-    author: "Kevin Kruse",
-  },
-  {
-    content: "There are no regrets in life, just lessons.",
-    author: "Jennifer Aniston",
-  },
-  {
-    content: "Accept no one's definition of your life, define yourself.",
-    author: "Harvey Fierstein",
-  },
-  {
-    content: "The longer I live the more beautiful life becomes.",
-    author: "Frank Lloyd Wright",
-  },
-  {
-    content:
-      "If you love life, don't waste time, for time is what life is made up of.",
-    author: "Bruce Lee",
-  },
-  {
-    content:
-      "Mistakes are a fact of life. It is the response to the error that counts.",
-    author: "Nikki Giovanni",
-  },
-  {
-    content:
-      "Life is not a problem to be solved, but a reality to be experienced.",
-    author: "Soren Kierkegaard",
-  },
-  {
-    content:
-      "Your time is limited, so don't waste it living someone else's life.",
-    author: "Steve Jobs",
-  },
-  {
-    content:
-      "If everything was perfect, you would never learn and you would never grow.",
-    author: "Beyoncé",
-  },
-  {
-    content:
-      "If we don't change, we don't grow. If we don't grow, we aren't really living.",
-    author: "Gail Sheehy",
-  },
-  {
-    content: "Life doesn't have to be perfect to be wonderful.",
-    author: "Annette Funicello",
-  },
-  {
-    content:
-      "The big lesson in life, baby, is never be scared of anyone or anything.",
-    author: "Frank Sinatra",
-  },
-  {
-    content:
-      "I think I've discovered the secret of life – you just hang around until you get used to it.",
-    author: "Charles Schulz",
-  },
-  {
-    content:
-      "Life is very interesting... in the end, some of your greatest pains, become your greatest strengths.",
-    author: "Drew Barrymore",
-  },
-  {
-    content:
-      "Challenges are what make life interesting and overcoming them is what makes life meaningful.",
-    author: "Joshua J. Marine",
+      "I am not a person who wants to be a symbol, but a person who wants to be effective.",
+    author: "Ahmed Ben Bella (First President of Algeria)",
   },
 
   {
     content:
-      "The most important trip you may take in life is meeting people halfway.",
-    author: "Henry Boye",
-  },
-  {
-    content:
-      "Life isn't about finding yourself. Life is about creating yourself.",
-    author: "George Bernard Shaw",
-  },
-  {
-    content:
-      "Fake friends are like shadows: always near you at your brightest moments, but nowhere to be seen at your darkest hour.",
-    author: "Khalil Gibran",
+      "The struggle for freedom and justice is not only a political battle, but a moral one.",
+    author: "Didouh Abderrahmane (Algerian Revolutionary Leader)",
   },
 
   {
     content:
-      "Being betrayed is one of the most valuable lessons life can teach.",
-    author: "Shania Twain",
-  },
-  {
-    content:
-      "Sometimes the person you'd take a bullet for ends up being behind the gun.",
-    author: "Tupac",
-  },
-  {
-    content: "We never lose friends; fake ones are exposed.",
-    author: "Carlos Wallace",
-  },
-  {
-    content:
-      "Time passes and you begin to see people for who they really are and not who they pretend to be.",
-    author: "Scarlet Koop",
-  },
-  {
-    content:
-      "Most people want to see you do better, but not doing better than them.",
-    author: "London Mond",
-  },
-  {
-    content:
-      "It's hard to tell who has your back, from who has it long enough just to stab you in it.",
-    author: "Nicole Richie",
-  },
-  {
-    content: "Best friends has 11 letters but so does backstabber.",
-    author: "Wiz Khalifa",
-  },
-  {
-    content:
-      "No person is your friend who demands your silence, or denies your right to grow.",
-    author: "Alice Walker",
-  },
-  {
-    content: "They're not happy for you because they wish it were them.",
-    author: "Carlos Wallace",
-  },
-  {
-    content: "Make sure the lions you roll with aren't snakes in disguise.",
-    author: "Beenereux Philip",
+      "We will not leave the land of our ancestors. We will fight until the end for our independence.",
+    author: "Larbi Ben M’hidi (Algerian Resistance Leader)",
   },
 
   {
     content:
-      "In the end, we will remember not the words of our enemies, but the silence of our friends.",
-    author: "Martin Luther King Jr.",
+      "A country that does not produce is doomed to death. A country that is economically enslaved is politically enslaved.",
+    author: "Mouloud Feraoun (Algerian Writer and Intellectual)",
   },
+
   {
     content:
-      "Fake friends are like soap bubbles. They pop out when the sun shines brightly.",
-    author: "Chiranjude Bird",
+      "In the end, it’s not the years in your life that count. It’s the life in your years.",
+    author: "Abane Ramdane (Algerian Revolutionary Leader)",
   },
-  {
-    content: "Fake friends are with you today and against you tomorrow.",
-    author: "Shizra",
-  },
+
   {
     content:
-      "Sometimes it's not the person who changes, it's the mask that falls off.",
-    author: "Mhaj Porras",
+      "The beauty of the world lies in the variety of its people and cultures.",
+    author: "Tahar Djaout (Algerian Journalist and Writer)",
   },
+
+  {
+    content: "It is better to die on your feet than to live on your knees.",
+    author: "Ali La Pointe (Algerian Resistance Fighter)",
+  },
+
   {
     content:
-      "Stop letting people who do so little for you control so much off your mind, feelings, and emotions.",
-    author: "Will Smith",
+      "The Algerian revolution was not merely a fight for independence, but a fight for the dignity of all oppressed peoples.",
+    author: "Houari Boumédiène (Second President of Algeria)",
   },
+
   {
     content:
-      "Be very careful of who you share your problem with, remember that not every friend that smiles at you is your best friend.",
-    author: "Kemmy Nola",
+      "Independence is not a gift that is given, but a right that is earned.",
+    author: "Salah Azzouz (Algerian Revolutionary)",
   },
+
   {
     content:
-      "A friend who stands with you in pressure is more valuable than a hundred ones who stand with you in pleasure.",
-    author: "Edward G. Bulwer Lytton",
+      "To be free is to live according to the spirit of your own culture, not by imitation.",
+    author: "Kateb Yacine (Algerian Writer and Playwright)",
   },
+
   {
     content:
-      "You never lose friends. Real ones always stay — no matter what about the fakes, you don't need anyways.",
-    author: "Drishti Bablani",
+      "Victory is not achieved by those who surrender, but by those who dare to fight.",
+    author: "Messali Hadj (Algerian Nationalist Leader)",
   },
+
+  {
+    content: "It is through unity and resistance that we build our future.",
+    author: "Amirouche Ait Hamouda (Algerian Military Leader)",
+  },
+
   {
     content:
-      "You should be aware of fake friend because it is the hardest to be aware of.",
-    author: "Eraldo Banovac",
+      "The battle for freedom is the greatest struggle any people can face.",
+    author: "Abdelhamid Ibn Badis (Algerian Scholar and Nationalist Leader)",
   },
-  {
-    content: "Better an honest enemy than a false friend.",
-    author: "German Proverb",
-  },
-  {
-    content: "What greater wound is there than a false friend?",
-    author: "Sophocles",
-  },
-  {
-    content: "Friends ask you questions, enemies question you.",
-    author: "Criss Jami",
-  },
+
   {
     content:
-      "A true friend never gets in your way unless you happen to be going down.",
-    author: "Arnold H. Glasow",
+      "Revolution is a tool to reach justice, peace, and dignity for the people.",
+    author: "Mohamed Boudiaf (Algerian Revolutionary Leader)",
   },
+
+  {
+    content: "A free man does not belong to the past but to the future.",
+    author: "Chadli Bendjedid (Fourth President of Algeria)",
+  },
+
   {
     content:
-      "You will never have to question the intentions or integrity of people who have your best interest at heart.",
-    author: "Germany Kent",
+      "In the heart of every Algerian, there is a flame that no enemy can extinguish.",
+    author: "Zohra Drif (Algerian Revolutionary Fighter)",
   },
+
   {
-    content: "People only throw shade on what's shining.",
-    author: "Genereux Philip",
+    content: "The fight for justice is not a choice, it is a duty.",
+    author: "Malika Gaïd (Algerian Revolutionary and Activist)",
   },
-  {
-    content:
-      "Letting go of toxic people in your life is a big step in loving yourself.",
-    author: "Hussein Nishah",
-  },
+
   {
     content:
-      "If you're absent during my struggle, don't expect to be present during my success.",
-    author: "Will Smith",
+      "We will always resist, because our land, our culture, and our identity are worth defending.",
+    author: "Lyes Deriche (Algerian Revolutionary and Writer)",
   },
+
   {
     content:
-      "You got nothing to lose. You don't lose when you lose fake friends.",
-    author: "Joan Jett",
+      "The revolution is a dream for the oppressed, a nightmare for the oppressor.",
+    author: "Abdelkader (Algerian Resistance Leader)",
   },
+
+  {
+    content: "Independence is not a gift, it is a right we must earn.",
+    author: "Benyoucef Benkhedda (Algerian Nationalist Leader)",
+  },
+
+  {
+    content: "The battle for freedom must be fought by every Algerian.",
+    author: "Larbi Ben M’hidi (Algerian Resistance Leader)",
+  },
+
+  {
+    content: "To resist is to exist.",
+    author: "Ali La Pointe (Algerian Revolutionary Fighter)",
+  },
+
+  {
+    content: "The only way to peace is through justice.",
+    author: "Houari Boumédiène (Second President of Algeria)",
+  },
+
+  {
+    content: "We will continue our fight until the last breath.",
+    author: "Abane Ramdane (Algerian Independence Leader)",
+  },
+
   {
     content:
-      "At some point you have to learn that some people can stay in your heart but not in your life.",
-    author: "Sandi Lynn",
+      "The revolution is not just an act of war, it is an act of the soul.",
+    author: "Frantz Fanon (Algerian Revolutionary Thinker)",
   },
+
+  {
+    content: "Our unity is the foundation of our strength.",
+    author: "Ahmed Ben Bella (First President of Algeria)",
+  },
+
+  {
+    content: "Those who want to break us will fail. Our spirit is indomitable.",
+    author: "Messali Hadj (Algerian Nationalist Leader)",
+  },
+
+  {
+    content: "No people are truly free until all people are free.",
+    author: "Kateb Yacine (Algerian Writer)",
+  },
+
+  {
+    content: "We are not born to be slaves, but to be free.",
+    author: "Abdelhamid Ibn Badis (Algerian Scholar)",
+  },
+
   {
     content:
-      "You create more space in your life when you turn your excess baggage to garbage.",
-    author: "Chinonye J. Chudolue",
+      "Our country, our dignity, and our future are worth every sacrifice.",
+    author: "Amirouche Ait Hamouda (Algerian Revolutionary Leader)",
   },
+
   {
-    content: "Never give your attention to someone who deserves your silence.",
-    author: "Emma Xu",
+    content: "We do not fight for power, but for justice.",
+    author: "Mouloud Feraoun (Algerian Writer)",
   },
+
   {
-    content:
-      "It makes no sense to try to extend a friendship that was only meant to be a season into a lifetime.",
-    author: "Mandy Hale",
+    content: "Peace can only exist when the oppressed are free.",
+    author: "Tahar Djaout (Algerian Journalist)",
   },
-  {
-    content:
-      "As he read, I fell in love the way you fall asleep: slowly, and then all at once.",
-    author: "John Green",
-  },
-  {
-    content: "Loved you yesterday, love you still, always have, always will.",
-    author: "Elaine Davis",
-  },
+
   {
     content:
-      "I saw that you were perfect, and so I loved you. Then I saw that you were not perfect and I loved you even more.",
-    author: "Angelita Lim",
+      "The struggle for independence is a never-ending fight for freedom.",
+    author: "Salah Azzouz (Algerian Revolutionary)",
   },
-  {
-    content: "If I know what love is, it is because of you.",
-    author: "Hermann Hesse",
-  },
+
   {
     content:
-      "I swear I couldn’t love you more than I do right now, and yet I know I will tomorrow.",
-    author: "Leo Christopher",
+      "Our rights are the legacy of our ancestors, and we will defend them.",
+    author: "Didouh Abderrahmane (Algerian Revolutionary Leader)",
   },
+
+  {
+    content: "The future belongs to those who fight for it.",
+    author: "Abdelkader (Algerian Resistance Leader)",
+  },
+
+  {
+    content: "To be free, we must fight and work hard, every day, every hour.",
+    author: "Mohamed Boudiaf (Algerian Revolutionary Leader)",
+  },
+
+  {
+    content: "Our struggle will not stop until we have built a just society.",
+    author: "Larbi Ben M’hidi (Algerian Revolutionary Leader)",
+  },
+
+  {
+    content: "Freedom is not a distant dream, it is a right we must claim.",
+    author: "Frantz Fanon (Algerian Revolutionary Thinker)",
+  },
+];
+
+export const ARQUOTES: QuoteData[] = [
+  {
+    content: "الحرية شيء مقدس ويجب الحفاظ عليها بأي ثمن.",
+    author: "علي لا بوينت (زعيم ثوري جزائري)",
+  },
+
   {
     content:
-      "If you live to be a hundred, I want to live to be a hundred minus one day so I never have to live without you.",
-    author: "A. A. Milne",
+      "لنا الحق في أن نكون أحراراً، في أن نبني، في أن نحلم، وفي أن نقاتل من أجل ما هو لنا.",
+    author: "فرانتز فانون (طبيب نفسي، فيلسوف، وثوري)",
   },
+
+  {
+    content: "أنا لست شخصاً يريد أن يكون رمزاً، بل شخصاً يريد أن يكون مفيداً.",
+    author: "أحمد بن بلة (أول رئيس للجزائر)",
+  },
+
   {
     content:
-      "A man is already halfway in love with any woman who listens to him.",
-    author: "Brendan Francis",
+      "النضال من أجل الحرية والعدل ليس مجرد معركة سياسية فقط، بل معركة أخلاقية.",
+    author: "ديدو عبد الرحمان (زعيم ثوري جزائري)",
   },
+
+  {
+    content: "لن نترك أرض أجدادنا. سنقاتل حتى النهاية من أجل استقلالنا.",
+    author: "العربي بن مهيدي (زعيم مقاوم جزائري)",
+  },
+
   {
     content:
-      "I love you as certain dark things are to be loved, in secret, between the shadow and the soul.",
-    author: "Pablo Neruda",
+      "الدولة التي لا تنتج محكوم عليها بالموت. الدولة التي تُستعبد اقتصادياً مستعبدة سياسياً.",
+    author: "مولود فرعون (كاتب ومفكر جزائري)",
   },
-  {
-    content: "Women are meant to be loved, not to be understood.",
-    author: "Oscar Wilde",
-  },
-  { content: "You make me want to be a better man.", author: "Melvin Udall" },
+
   {
     content:
-      "Thinking of you keeps me awake. Dreaming of you keeps me asleep. Being with you keeps me alive.",
-    author: "Unknown",
+      "في النهاية، ليس السنوات في حياتك هي التي تحسب، بل الحياة في سنواتك.",
+    author: "عبان رمضان (زعيم ثوري جزائري)",
   },
+
+  {
+    content: "جمال العالم يكمن في تنوع شعوبه وثقافاته.",
+    author: "طاهر جاعوت (صحفي وكاتب جزائري)",
+  },
+
+  {
+    content: "أفضل أن أموت على قدميّ أكثر من أن أعيش على ركبتي.",
+    author: "علي لا بوينت (مقاوم جزائري)",
+  },
+
   {
     content:
-      "Take my hand, take my whole life too. For I can’t help falling in love with you.",
-    author: "Elvis Presley",
+      "الثورة الجزائرية لم تكن مجرد صراع من أجل الاستقلال، بل صراع من أجل كرامة جميع الشعوب المظلومة.",
+    author: "هواري بومدين (رئيس الجزائر الثاني)",
   },
+
   {
-    content: "Grow old along with me; the best is yet to be.",
-    author: "Robert Browning",
+    content: "الاستقلال ليس هدية تُعطى، بل هو حق يُكتسب.",
+    author: "صلاح عزوز (ثوري جزائري)",
   },
+
   {
-    content:
-      "The real lover is a man who can thrill you by kissing your forehead or smiling into your eyes or just staring into space.",
-    author: "Marilyn Monroe",
+    content: "الحرية هي أن تعيش حسب روح ثقافتك، وليس بالتقليد.",
+    author: "كاتب ياسين (كاتب ومسرحي جزائري)",
   },
-  {
-    content:
-      "In all the world, there is no heart for me like yours. In all the world, there is no love for you like mine.",
-    author: "Maya Angelou",
-  },
-  {
-    content: "I’ll be loving you, always with a love that’s true",
-    author: "Patsy Cline",
-  },
+
   {
     content:
-      "Thinking of you keeps me awake. Dreaming of you keeps me asleep. Being with you keeps me alive.",
-    author: "Unknown",
+      "النصر لا يُحقّق من الذين يستسلمون، بل من الذين يجرؤون على القتال.",
+    author: "مسالي حاج (زعيم وطني جزائري)",
   },
-  { content: "I need you like a heart needs a beat.", author: "One Republic" },
+
   {
-    content:
-      "Love is that condition in which the happiness of another person is essential to your own.",
-    author: "Robert A. Heinlein",
+    content: "من خلال الوحدة والمقاومة نبني مستقبلنا.",
+    author: "أميروش آيت حمودة (زعيم عسكري جزائري)",
   },
+
   {
-    content: "He is not a lover who does not love forever.",
-    author: "Euripides",
+    content: "معركة الحرية هي أكبر معركة يمكن أن يواجهها أي شعب.",
+    author: "عبد الحميد بن باديس (عالم وزعيم وطني جزائري)",
   },
-  { content: "To love is to burn, to be on fire.", author: "Jane Austen" },
+
   {
-    content:
-      "Love does not begin and end the way we seem to think it does. Love is a battle, love is a war; love is a growing up.",
-    author: "James Baldwin",
+    content: "الثورة هي أداة للوصول إلى العدل والسلام والكرامة للشعب.",
+    author: "محمد بوضياف (زعيم ثوري جزائري)",
   },
+
   {
-    content:
-      "In the end we discover that to love and let go can be the same thing.",
-    author: "Jack Kornfield",
+    content: "الإنسان الحر لا ينتمي إلى الماضي، بل إلى المستقبل.",
+    author: "الشاذلي بن جديد (رئيس الجزائر الرابع)",
   },
+
   {
-    content:
-      "Pleasure of love lasts but a moment. Pain of love lasts a lifetime.",
-    author: "Bette Davis",
+    content: "في قلب كل جزائري، هناك شمعه لا يستطيع أي عدو إطفاءها.",
+    author: "زهرة دريف (مقاتلة ثورية جزائرية)",
   },
+
   {
-    content: "Love is so short, forgetting is so long.",
-    author: "Pablo Neruda",
+    content: "القتال من أجل العدل ليس اختياراً، بل هو واجب.",
+    author: "مليكة قيد (ثورية وناشطة جزائرية)",
   },
+
   {
-    content: "Love is a thing that is full of cares and fears.",
-    author: "Ovid",
+    content: "سنقاوم دائماً، لأن أرضنا، وثقافتنا، وهويتنا تستحق الدفاع.",
+    author: "لياس دريش (ثوري وكاتب جزائري)",
   },
+
   {
-    content: "Love is not love until love’s vulnerable.",
-    author: "Theodore Roethke",
+    content: "الثورة هي حلم للمظلوم، وكابوس للمظلم.",
+    author: "عبد القادر (زعيم مقاوم جزائري)",
+  },
+
+  {
+    content: "الاستقلال ليس هدية، إنه حق يجب أن نكسبه.",
+    author: "بن يوسف بن خدة (زعيم وطني جزائري)",
+  },
+
+  {
+    content: "معركة الحرية يجب أن يخوضها كل جزائري.",
+    author: "العربي بن مهيدي (زعيم مقاوم جزائري)",
+  },
+
+  { content: "المقاومة هي الوجود.", author: "علي لا بوينت (مقاوم جزائري)" },
+
+  {
+    content: "الطريق الوحيد إلى السلام هو عبر العدل.",
+    author: "هواري بومدين (رئيس الجزائر الثاني)",
+  },
+
+  {
+    content: "سوف نواصل نضالنا حتى آخر نفس.",
+    author: "عبان رمضان (زعيم ثوري جزائري)",
+  },
+
+  {
+    content: "الثورة ليست مجرد عمل حربي، بل هي عمل روحي.",
+    author: "فرانتز فانون (مفكر ثوري جزائري)",
+  },
+
+  {
+    content: "وحدتنا هي أساس قوتنا.",
+    author: "أحمد بن بلة (أول رئيس للجزائر)",
+  },
+
+  {
+    content: "الذين يريدون تحطيمنا سيفشلون. روحنا لا يمكن كسرها.",
+    author: "مسالي حاج (زعيم وطني جزائري)",
+  },
+
+  {
+    content: "لا شعب حر بحق حتى يكون كل الشعوب حرة.",
+    author: "كاتب ياسين (كاتب جزائري)",
+  },
+
+  {
+    content: "نحن لا نولد لنكون عبيداً، بل لنكون أحراراً.",
+    author: "عبد الحميد بن باديس (عالم جزائري)",
+  },
+
+  {
+    content: "بلدنا وكرامتنا ومستقبلنا تستحق كل تضحية.",
+    author: "أميروش آيت حمودة (زعيم ثوري جزائري)",
+  },
+
+  {
+    content: "نحن لا نقاتل من أجل السلطة، بل من أجل العدالة.",
+    author: "مولود فرعون (كاتب جزائري)",
+  },
+
+  {
+    content: "السلام لا يمكن أن يوجد إلا عندما يكون المظلومون أحراراً.",
+    author: "طاهر جاعوت (صحفي جزائري)",
+  },
+
+  {
+    content: "النضال من أجل الاستقلال هو قتال لا ينتهي من أجل الحرية.",
+    author: "صلاح عزوز (ثوري جزائري)",
+  },
+
+  {
+    content: "حقوقنا هي إرث أجدادنا، وسندافع عنها.",
+    author: "ديدو عبد الرحمان (زعيم ثوري جزائري)",
+  },
+
+  {
+    content: "المستقبل ينتمي لأولئك الذين يقاتلون من أجله.",
+    author: "عبد القادر (زعيم مقاوم جزائري)",
+  },
+
+  {
+    content: "لكي نكون أحراراً، يجب أن نقاتل ونعمل بجد، كل يوم، وكل ساعة.",
+    author: "محمد بوضياف (زعيم ثوري جزائري)",
+  },
+
+  {
+    content: "نضالنا لن يتوقف حتى نبني مجتمعاً عادلاً.",
+    author: "العربي بن مهيدي (زعيم مقاوم جزائري)",
+  },
+
+  {
+    content: "الحرية ليست حلمًا بعيدًا، إنها حق يجب أن نطالب به.",
+    author: "فرانتز فانون (مفكر ثوري جزائري)",
   },
 ];
