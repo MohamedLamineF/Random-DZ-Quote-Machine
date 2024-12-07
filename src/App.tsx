@@ -36,7 +36,7 @@ function App() {
         </span>
         <div className="flex items-center justify-center gap-3">
           <a
-            href="https://github.com/YourUsername"
+            href="https://github.com/MohamedLamineF"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition-colors"
@@ -45,7 +45,7 @@ function App() {
           </a>
           <span className="text-white/50">•</span>
           <a
-            href="https://linkedin.com/in/YourUsername"
+            href="https://www.linkedin.com/in/mohamedlaminef/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition-colors"
@@ -54,7 +54,7 @@ function App() {
           </a>
           <span className="text-white/50">•</span>
           <a
-            href="https://twitter.com/YourUsername"
+            href="https://x.com/Mohamed_LamineF"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition-colors"
@@ -63,7 +63,7 @@ function App() {
           </a>
           <span className="text-white/50">•</span>
           <a
-            href="https://bsky.app/profile/YourUsername"
+            href="https://bsky.app/profile/mohamedlamine.bsky.social"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition-colors"
