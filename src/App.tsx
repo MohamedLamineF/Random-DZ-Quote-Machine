@@ -30,7 +30,49 @@ function App() {
         />
       </div>
 
-      <div>by me</div>
+      <div className="grid grid-cols-3 w-full text-white/80 text-xs">
+        <span className="mr-2 text-start text-ellipsis">
+          Made for FreeCodeCamp Front End Development Libraries Projects
+        </span>
+        <div className="flex items-center justify-center gap-3">
+          <a
+            href="https://github.com/YourUsername"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white transition-colors"
+          >
+            Github
+          </a>
+          <span className="text-white/50">•</span>
+          <a
+            href="https://linkedin.com/in/YourUsername"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white transition-colors"
+          >
+            LinkedIn
+          </a>
+          <span className="text-white/50">•</span>
+          <a
+            href="https://twitter.com/YourUsername"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white transition-colors"
+          >
+            Twitter
+          </a>
+          <span className="text-white/50">•</span>
+          <a
+            href="https://bsky.app/profile/YourUsername"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white transition-colors"
+          >
+            Bluesky
+          </a>
+        </div>
+        <span className="mr-2 text-end">© Lamine</span>
+      </div>
     </div>
   );
 }
