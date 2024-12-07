@@ -1,5 +1,5 @@
-const { SitemapStream, streamToPromise } = require("sitemap");
-const { createWriteStream } = require("fs");
+import { SitemapStream, streamToPromise } from "sitemap";
+import { createWriteStream } from "fs";
 
 const sitemap = new SitemapStream({
   hostname: "https://dz-quotes.netlify.app",
