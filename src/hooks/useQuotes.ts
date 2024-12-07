@@ -1,11 +1,16 @@
 import { useState, useCallback } from "react";
-import { QuoteData, QUOTES } from "../types";
+import { QuoteData, ENQUOTES, ARQUOTES } from "../types";
 
 export const useQuotes = () => {
-  const [quote, setQuote] = useState<QuoteData>(QUOTES[0]);
-  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const initialLanguage = localStorage.getItem("language") || "en";
+  const initialQuote = initialLanguage === "en" ? ENQUOTES[0] : ARQUOTES[0];
+
+  const [quote, setQuote] = useState<QuoteData>(initialQuote);
+  const [isLoading, setIsLoading] = useState(false);
+  const [language, setLanguage] = useState<string>(initialLanguage);
 
   const getRandomQuote = (): QuoteData => {
+    const QUOTES = language === "en" ? ENQUOTES : ARQUOTES;
     let newQuote: QuoteData;
     do {
       newQuote = QUOTES[Math.floor(Math.random() * QUOTES.length)];
@@ -20,7 +25,13 @@ export const useQuotes = () => {
       setQuote(newQuote);
       setIsLoading(false);
     }, 300);
-  }, [quote]);
+  }, [quote, language]);
 
-  return { quote, isLoading, fetchNewQuote };
+  const changeLanguage = (lang: string) => {
+    setLanguage(lang);
+    localStorage.setItem("language", lang);
+    setQuote(lang === "en" ? ENQUOTES[0] : ARQUOTES[0]);
+  };
+
+  return { quote, isLoading, fetchNewQuote, language, changeLanguage };
 };

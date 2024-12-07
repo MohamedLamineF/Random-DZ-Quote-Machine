@@ -5,7 +5,8 @@ import { GRADIENT_COLORS } from "./types";
 import { useQuotes } from "./hooks/useQuotes";
 
 function App() {
-  const { quote, isLoading, fetchNewQuote } = useQuotes();
+  const { quote, isLoading, fetchNewQuote, language, changeLanguage } =
+    useQuotes();
   const [bgColor, setBgColor] = useState<number>(0);
 
   const handleNewQuote = () => {
@@ -15,9 +16,21 @@ function App() {
 
   return (
     <div
-      className={`min-h-screen ${GRADIENT_COLORS[bgColor]} transition-all duration-1000 ease-in-out flex items-center justify-center p-4 animate-gradient-x`}
+      className={`min-h-screen ${GRADIENT_COLORS[bgColor]} transition-all duration-1000 ease-in-out flex flex-col items-center justify-between p-4 animate-gradient-x`}
     >
-      <QuoteContainer quote={quote} onNewQuote={handleNewQuote} />
+      <div></div>
+
+      <div>
+        <QuoteContainer
+          quote={quote}
+          isLoading={isLoading}
+          onNewQuote={handleNewQuote}
+          language={language}
+          onChangeLanguage={changeLanguage}
+        />
+      </div>
+
+      <div>by me</div>
     </div>
   );
 }
