@@ -32,7 +32,7 @@ function App() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-2 w-full text-white/80 text-xs">
         <p className="mr-2  text-center md:text-start truncate ">
-          Made for FreeCodeCamp Front End Development Libraries Projects
+          Made for FreeCodeCamp course "Front End Development Libraries"
         </p>
         <div className="flex items-center justify-center gap-3">
           <a
