@@ -36,7 +36,7 @@ function App() {
         </p>
         <div className="flex items-center justify-center gap-3">
           <a
-            href="https://github.com/MohamedLamineF"
+            href="https://github.com/MohamedLamineF/Random-DZ-Quote-Machine"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition-colors"
