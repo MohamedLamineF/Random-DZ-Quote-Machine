@@ -72,7 +72,7 @@ const QuoteContainer: React.FC<QuoteContainerProps> = ({
               href={tweetQuote()}
               target="_blank"
             >
-              <img src={x} alt="twitter" width={20} />
+              <img src={x} alt="Twitter logo" width={20} />
               <span className="hidden sm:block">Tweet</span>
             </a>
 
@@ -84,7 +84,7 @@ const QuoteContainer: React.FC<QuoteContainerProps> = ({
               href={blueSkyQuote()}
               target="_blank"
             >
-              <img src={butterfly} alt="bsky" width={20} />
+              <img src={butterfly} alt="Bluesky logo" width={20} />
               <span className="hidden sm:block">Skeet</span>
             </a>
           </div>
