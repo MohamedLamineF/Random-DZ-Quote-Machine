@@ -1,4 +1,4 @@
-# Random Algerian Quote Machine 
+# Random Algerian Quote Machine
 
 Welcome to the **Random Quote Machine** project!
 
